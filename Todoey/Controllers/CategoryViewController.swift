@@ -105,7 +105,7 @@ class CategoryViewController: UITableViewController {
             newCategory.name = textField.text!
             self.categories.append(newCategory)
             newCategory.parentScavy = self.selectedScavy
-            self.categories.append(newCategory)
+
             
             self.saveCategories()
             

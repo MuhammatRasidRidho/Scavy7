@@ -9,8 +9,18 @@
 import UIKit
 import CoreData
 
+class CategoryTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var lblNama: UILabel!
+    @IBOutlet weak var lblKelas: UILabel!
+    @IBOutlet weak var lblSemester: UILabel!
+}
+
+
+
 class ScavyViewController: UITableViewController {
 
+    
     
     var scavies = [Scavy]()
     
@@ -33,9 +43,16 @@ class ScavyViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ScavyCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ScavyCell", for: indexPath) as! CategoryTableViewCell
+        let category = scavies[indexPath.row]
         
-        cell.textLabel?.text = scavies[indexPath.row].name
+        cell.lblNama?.text = category.name
+        cell.lblKelas?.text = category.kelas
+        cell.lblSemester?.text = category.semester
+        
+        
+//        cell.textLabel?.text = scavies[indexPath.row].kelas
+//        cell.textLabel?.text = scavies[indexPath.row].semester
         
         return cell
     }
@@ -88,6 +105,8 @@ class ScavyViewController: UITableViewController {
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
+        var textField2 = UITextField()
+        var textField3 = UITextField()
         
         let alert = UIAlertController(title: "Tambah Pelajaran", message: "", preferredStyle: .alert)
         
@@ -95,6 +114,8 @@ class ScavyViewController: UITableViewController {
             
             let newScavy = Scavy(context: self.context)
             newScavy.name = textField.text!
+            newScavy.kelas = textField2.text!
+            newScavy.semester = textField3.text!
             
             self.scavies.append(newScavy)
             
@@ -109,9 +130,21 @@ class ScavyViewController: UITableViewController {
             textField.placeholder = "Tambah Pelajaran Baru"
         }
         
+        alert.addTextField { (field2) in
+            
+            textField2 = field2
+            textField2.placeholder = "Tambah Kelas Baru"
+        }
+        
+        alert.addTextField { (field3) in
+            textField3 = field3
+            textField3.placeholder = "Tambah Semester Baru"
+        }
+        
         present(alert, animated: true, completion: nil)
         
     }
     
     
 }
+

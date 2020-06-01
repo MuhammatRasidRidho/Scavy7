@@ -11,12 +11,14 @@
         <relationship name="parentScavy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scavy" inverseName="categorys" inverseEntity="Scavy"/>
     </entity>
     <entity name="Scavy" representedClassName=".Scavy" syncable="YES" codeGenerationType="class">
+        <attribute name="kelas" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="semester" optional="YES" attributeType="String"/>
         <relationship name="categorys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pertemuan" inverseName="parentScavy" inverseEntity="Pertemuan"/>
     </entity>
     <elements>
-        <element name="Pertemuan" positionX="-848" positionY="-1188" width="128" height="88"/>
         <element name="Kegiatan" positionX="-675" positionY="-1188" width="128" height="88"/>
-        <element name="Scavy" positionX="-1082.09765625" positionY="-1191.05859375" width="128" height="73"/>
+        <element name="Pertemuan" positionX="-848" positionY="-1188" width="128" height="88"/>
+        <element name="Scavy" positionX="-1082.09765625" positionY="-1191.05859375" width="128" height="103"/>
     </elements>
 </model>
