@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Kegiatan" representedClassName=".Item" syncable="YES" codeGenerationType="class">
+        <attribute name="done" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pertemuan" inverseName="items" inverseEntity="Pertemuan"/>
+    </entity>
+    <entity name="Pertemuan" representedClassName=".Category" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kegiatan" inverseName="parentCategory" inverseEntity="Kegiatan"/>
+        <relationship name="parentScavy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scavy" inverseName="categorys" inverseEntity="Scavy"/>
+    </entity>
+    <entity name="Scavy" representedClassName=".Scavy" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="categorys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pertemuan" inverseName="parentScavy" inverseEntity="Pertemuan"/>
+    </entity>
+    <elements>
+        <element name="Pertemuan" positionX="-848" positionY="-1188" width="128" height="88"/>
+        <element name="Kegiatan" positionX="-675" positionY="-1188" width="128" height="88"/>
+        <element name="Scavy" positionX="-1082.09765625" positionY="-1191.05859375" width="128" height="73"/>
+    </elements>
+</model>
