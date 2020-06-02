@@ -73,9 +73,9 @@ class TodoListViewController: UITableViewController {
         
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Tambah Kegiatan Baru", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add New Activity ", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Tambah Kegiatan", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add Activity", style: .default) { (action) in
             //what will happen once the user clicks the Add Item button on our UIAlert
             
             
@@ -89,7 +89,7 @@ class TodoListViewController: UITableViewController {
         }
         
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Jenis kegiatan"
+            alertTextField.placeholder = "Learn"
             textField = alertTextField
             
         }

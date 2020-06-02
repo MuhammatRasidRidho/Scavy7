@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="176.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Pertemuan-->
+        <!--Meeting-->
         <scene sceneID="IP2-9K-xsM">
             <objects>
                 <tableViewController id="qR3-UI-YkX" customClass="CategoryViewController" customModule="Scavy" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,6 +89,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -96,7 +97,7 @@
                             <outlet property="delegate" destination="qR3-UI-YkX" id="45b-BO-Qdb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pertemuan" id="vTC-0e-tpE">
+                    <navigationItem key="navigationItem" title="Meeting" id="vTC-0e-tpE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9ES-LT-Xz4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -112,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="919" y="133"/>
         </scene>
-        <!--Kegiatan-->
+        <!--Activity-->
         <scene sceneID="kYa-M8-nhH">
             <objects>
                 <tableViewController id="0k3-aa-NJ4" customClass="TodoListViewController" customModule="Scavy" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,7 +145,7 @@
                             <outlet property="delegate" destination="0k3-aa-NJ4" id="8oj-tt-Uv4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Kegiatan" largeTitleDisplayMode="always" id="jfb-NI-sI4">
+                    <navigationItem key="navigationItem" title="Activity" largeTitleDisplayMode="always" id="jfb-NI-sI4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YK2-OQ-nsA">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>

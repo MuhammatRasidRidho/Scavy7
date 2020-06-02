@@ -108,9 +108,9 @@ class ScavyViewController: UITableViewController {
         var textField2 = UITextField()
         var textField3 = UITextField()
         
-        let alert = UIAlertController(title: "Tambah Pelajaran", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Subject", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Tambah", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
             let newScavy = Scavy(context: self.context)
             newScavy.name = textField.text!
@@ -127,18 +127,18 @@ class ScavyViewController: UITableViewController {
         
         alert.addTextField { (field) in
             textField = field
-            textField.placeholder = "Tambah Pelajaran Baru"
+            textField.placeholder = "Add New Subject"
         }
         
         alert.addTextField { (field2) in
             
             textField2 = field2
-            textField2.placeholder = "Tambah Kelas Baru"
+            textField2.placeholder = "Add New Class"
         }
         
         alert.addTextField { (field3) in
             textField3 = field3
-            textField3.placeholder = "Tambah Semester Baru"
+            textField3.placeholder = "Add New Semester"
         }
         
         present(alert, animated: true, completion: nil)
