@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BKI-mX-2Wr"; */
+"BKI-mX-2Wr.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IEp-Xg-jfG"; */
+"IEp-Xg-jfG.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tkv-y9-7GC"; */
+"Tkv-y9-7GC.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Scavy"; ObjectID = "cf9-fr-Yf8"; */
+"cf9-fr-Yf8.title" = "Scavy";
+
+/* Class = "UINavigationItem"; title = "Activity"; ObjectID = "jfb-NI-sI4"; */
+"jfb-NI-sI4.title" = "Kegiatan";
+
+/* Class = "UINavigationItem"; title = "Meeting"; ObjectID = "vTC-0e-tpE"; */
+"vTC-0e-tpE.title" = "Meeting";
