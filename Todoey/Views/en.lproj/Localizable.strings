@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Scavy
+
+  Created by Franky Chainoor Johari on 11/06/20.
+  Copyright © 2020 Angela Yu. All rights reserved.
+*/
+
+"Add New Subject" = "Add New Subject";
+"Add New Class" = "Add New Class";
+"Add New Semester" = "Add New Semester";
+"Add Subject" = "Add Subject";
+"Add New Meeting" = "Add New Meeting";
+"Meeting 1" = "Meeting 1";
+"Add" = "Add";
+"Activity" = "Activity";
+"Add Activity" = "Add Activity";
+

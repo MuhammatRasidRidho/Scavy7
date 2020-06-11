@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3135640D24920806009F0FFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3135640B24920806009F0FFC /* Localizable.strings */; };
 		412C349124848A5E00BDF477 /* ScavyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C349024848A5E00BDF477 /* ScavyViewController.swift */; };
 		AD0968AA1FD17AC20008922D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A91FD17AC20008922D /* CategoryViewController.swift */; };
 		AD3197CC1FD0213E00995E07 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD3197CA1FD0213E00995E07 /* DataModel.xcdatamodeld */; };
@@ -19,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		313564092491FE25009F0FFC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		3135640C24920806009F0FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Todoey/Views/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		3135640E24920829009F0FFC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = ../Views/id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		313564102492084E009F0FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../Views/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		412C349024848A5E00BDF477 /* ScavyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScavyViewController.swift; path = Todoey/Controllers/ScavyViewController.swift; sourceTree = SOURCE_ROOT; };
 		AD0968A91FD17AC20008922D /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AD3197CB1FD0213E00995E07 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				412C349024848A5E00BDF477 /* ScavyViewController.swift */,
+				3135640B24920806009F0FFC /* Localizable.strings */,
 				AD0968A91FD17AC20008922D /* CategoryViewController.swift */,
 				AD9E197C1FBDA0FD009CCEEA /* TodoListViewController.swift */,
 			);
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9E19851FBDA0FD009CCEEA /* LaunchScreen.storyboard in Resources */,
+				3135640D24920806009F0FFC /* Localizable.strings in Resources */,
 				AD9E19821FBDA0FD009CCEEA /* Assets.xcassets in Resources */,
 				AD9E19801FBDA0FD009CCEEA /* Main.storyboard in Resources */,
 			);
@@ -191,6 +197,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3135640B24920806009F0FFC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3135640C24920806009F0FFC /* Base */,
+				3135640E24920829009F0FFC /* id */,
+				313564102492084E009F0FFC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		AD9E197E1FBDA0FD009CCEEA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

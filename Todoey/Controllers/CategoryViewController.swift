@@ -97,9 +97,9 @@ class CategoryViewController: UITableViewController {
         
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Add New Meeting", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("Add New Meeting", comment: ""), message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+        let action = UIAlertAction(title: NSLocalizedString("Add", comment: ""), style: .default) { (action) in
             
             let newCategory = Category(context: self.context)
             newCategory.name = textField.text!
@@ -115,7 +115,7 @@ class CategoryViewController: UITableViewController {
         
         alert.addTextField { (field) in
             textField = field
-            textField.placeholder = "Meeting 1"
+            textField.placeholder = NSLocalizedString("Meeting 1", comment: "")
         }
         
         present(alert, animated: true, completion: nil)
