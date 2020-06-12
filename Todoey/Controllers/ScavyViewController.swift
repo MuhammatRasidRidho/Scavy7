@@ -29,6 +29,8 @@ class ScavyViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UINavigationBar.appearance().prefersLargeTitles = true
+        
         loadScavies()
         
     }
@@ -37,8 +39,9 @@ class ScavyViewController: UITableViewController {
     //MARK: - Table View DataSource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        print(scavies.count)
         return scavies.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -149,11 +152,13 @@ class ScavyViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
         print("Deleted")
-
-        self.scavies.remove(at: indexPath.row + 1)
-        self.context.delete(scavies[indexPath.row + 1])
+        
+        self.context.delete(scavies[indexPath.row])
+        self.scavies.remove(at: indexPath.row)
+        
         self.tableView.deleteRows(at: [indexPath], with: .automatic)
         self.saveScavies()
+        
       }
         tableView.reloadData()
     }
