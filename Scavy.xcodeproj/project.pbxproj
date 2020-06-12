@@ -59,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				412C349024848A5E00BDF477 /* ScavyViewController.swift */,
-				3135640B24920806009F0FFC /* Localizable.strings */,
 				AD0968A91FD17AC20008922D /* CategoryViewController.swift */,
 				AD9E197C1FBDA0FD009CCEEA /* TodoListViewController.swift */,
+				3135640B24920806009F0FFC /* Localizable.strings */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

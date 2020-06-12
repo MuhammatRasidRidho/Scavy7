@@ -34,7 +34,7 @@ class ScavyViewController: UITableViewController {
     }
 
     
-    //Mark: - Table View DataSource Methods
+    //MARK: - Table View DataSource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -57,7 +57,7 @@ class ScavyViewController: UITableViewController {
         return cell
     }
 
-    //Mark: - Table View Delegate Methods
+    //MARK: - Table View Delegate Methods
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToPertemuans", sender: self)
@@ -73,7 +73,7 @@ class ScavyViewController: UITableViewController {
     }
 
         
-    //Mark: - Data Manipulation Methods
+    //MARK: - Data Manipulation Methods
     
     func saveScavies(){
         do {
@@ -99,7 +99,7 @@ class ScavyViewController: UITableViewController {
     }
 
     
-    //Mark: - Add New Scavy
+    //MARK: - Add New Scavy
     
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
@@ -144,7 +144,19 @@ class ScavyViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
         
     }
+    // MARK: - Delete Slider
     
-    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        print("Deleted")
+
+        self.scavies.remove(at: indexPath.row + 1)
+        self.context.delete(scavies[indexPath.row + 1])
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+        self.saveScavies()
+      }
+        tableView.reloadData()
+    }
 }
+
 

@@ -10,7 +10,7 @@ import CoreData
 
 class CategoryViewController: UITableViewController {
     
-    var categories = [Category]()
+    var categories = [Category] ()
     
     var selectedScavy : Scavy? {
         didSet{
