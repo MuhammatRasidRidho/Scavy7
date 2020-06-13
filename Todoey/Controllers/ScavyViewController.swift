@@ -14,6 +14,8 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var lblNama: UILabel!
     @IBOutlet weak var lblKelas: UILabel!
     @IBOutlet weak var lblSemester: UILabel!
+    
+    
 }
 
 
@@ -30,6 +32,8 @@ class ScavyViewController: UITableViewController {
         super.viewDidLoad()
         
         UINavigationBar.appearance().prefersLargeTitles = true
+        
+        
         
         loadScavies()
         
@@ -50,12 +54,23 @@ class ScavyViewController: UITableViewController {
         let category = scavies[indexPath.row]
         
         cell.lblNama?.text = category.name
+        cell.lblNama.isAccessibilityElement = true
+        cell.lblNama.accessibilityLabel = cell.lblNama?.text
+        cell.lblNama.accessibilityValue = cell.lblNama?.text
+        cell.lblNama.font = .preferredFont(forTextStyle: .body)
+        //cell.lblNama.numberOfLines = 0
+        
         cell.lblKelas?.text = category.kelas
+        cell.lblKelas.isAccessibilityElement = true
+        cell.lblKelas.accessibilityLabel = cell.lblKelas?.text
+        cell.lblKelas.accessibilityValue = cell.lblKelas?.text
+        cell.lblKelas.font = .preferredFont(forTextStyle: .body)
+        
         cell.lblSemester?.text = category.semester
-        
-        
-//        cell.textLabel?.text = scavies[indexPath.row].kelas
-//        cell.textLabel?.text = scavies[indexPath.row].semester
+        cell.lblSemester.isAccessibilityElement = true
+        cell.lblSemester.accessibilityLabel = cell.lblSemester?.text
+        cell.lblSemester.accessibilityValue = cell.lblSemester?.text
+        cell.lblSemester.font = .preferredFont(forTextStyle: .body)
         
         return cell
     }
