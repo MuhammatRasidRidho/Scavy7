@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Scavy
+
+  Created by Franky Chainoor Johari on 11/06/20.
+  Copyright © 2020 Angela Yu. All rights reserved.
+*/
+
+"Add New Subject" = "새로운 주제를 추가합니다";
+"Add New Class" = "새로운 수업을 추가합니다";
+"Add New Semester" = "새 학기를 추가합니다";
+"Add Subject" = "주제를 추가합니다";
+"Add New Meeting" = "새 회의를 추가합니다";
+"Meeting 1" = "1 회의";
+"Add" = "추가합니다";
+"Activity" = "활동입니다";
+"Add Activity" = "활동을 추가합니다";
